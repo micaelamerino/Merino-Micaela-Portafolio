@@ -1,0 +1,108 @@
+.navbar {
+    border-bottom: 3px solid #6b03c0;
+}
+
+.nav-link {
+    color: #000;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #0165c2;
+    transition: 0.3s;
+}
+
+.titulo {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    text-shadow: 0.07em 0.07em 0.03em #adadad;
+}
+
+h2,
+p,
+a,
+input,
+textarea,
+button {
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.2rem;
+}
+
+.img-fondo>img {
+    width: 250px;
+    border-radius: 30px;
+}
+
+#sobremi {
+    padding: 20px;
+}
+
+.sobre-mi {
+    background: linear-gradient(to left, #6b03c0, #0165c2, #bd3986, #e0a31f);
+    color: aliceblue;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.descarga-cv {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.descarga-cv:hover {
+    background-color: #fff;
+    color: #6b03c0;
+    transition: 0.5s;
+}
+
+.img-skills>img {
+    width: 100px;
+}
+
+.img-portafolio>img {
+    width: 200px;
+}
+
+.ver-portfolio {
+    color: #6b03c0;
+    text-decoration: none;
+}
+
+.ver-portfolio:hover {
+    color: #bd3986;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.img-contacto>a>img {
+    width: 50px;
+}
+
+.formulario>input,
+textarea,
+button {
+    border-radius: 5px;
+    border: 2px solid #6b03c0;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #6b03c0;
+    color: #fff;
+    transition: 0.5s;
+}
+
+@media (min-width: 576px) {
+    .formulario {
+        width: 50%;
+    }
+}
