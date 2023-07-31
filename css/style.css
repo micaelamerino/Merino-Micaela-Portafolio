@@ -1,108 +1,183 @@
-.navbar {
-    border-bottom: 3px solid #6b03c0;
+@font-face {
+    font-family: Rochester;
+    src: url("/fonts/Rochester-Regular.ttf");
 }
 
-.nav-link {
-    color: #000;
-    font-weight: 600;
+@font-face {
+    font-family: Ysabeau Infant;
+    src: url("/fonts/YsabeauInfant-Regular.ttf");
 }
 
-.nav-link:hover {
-    color: #0165c2;
-    transition: 0.3s;
+body {
+    background-image: url("/assets/fondo1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    font-family: Ysabeau Infant, sans-serif;
+    font-size: larger;
 }
 
 .titulo {
-    font-family: 'Pacifico', cursive;
-    font-size: 3rem;
-    text-shadow: 0.07em 0.07em 0.03em #adadad;
+    font-family: Rochester;
+    color: #65c5bd;
+    font-size: 4rem;
 }
 
-h2,
-p,
-a,
-input,
-textarea,
-button {
-    font-family: 'Comic Neue', cursive;
-    font-size: 1.2rem;
+.contenedor {
+    background-color: #ffffff8f;
+    margin: 20px;
+    border-radius: 10px;
 }
 
-.img-fondo>img {
-    width: 250px;
-    border-radius: 30px;
-}
-
-#sobremi {
-    padding: 20px;
-}
-
-.sobre-mi {
-    background: linear-gradient(to left, #6b03c0, #0165c2, #bd3986, #e0a31f);
-    color: aliceblue;
-    border-radius: 30px;
-    padding: 30px;
-}
-
-.descarga-cv {
-    border: 2px solid #fff;
-    border-radius: 5px;
-    color: #fff;
-    padding: 5px;
+.navbar-nav a {
     text-decoration: none;
+    color: #000;
+    position: relative;
 }
 
-.descarga-cv:hover {
-    background-color: #fff;
-    color: #6b03c0;
-    transition: 0.5s;
-}
-
-.img-skills>img {
-    width: 100px;
-}
-
-.img-portafolio>img {
-    width: 200px;
-}
-
-.ver-portfolio {
-    color: #6b03c0;
-    text-decoration: none;
-}
-
-.ver-portfolio:hover {
-    color: #bd3986;
-    text-decoration: none;
-    transition: 0.5s;
-}
-
-.img-contacto>a>img {
-    width: 50px;
-}
-
-.formulario>input,
-textarea,
-button {
-    border-radius: 5px;
-    border: 2px solid #6b03c0;
-}
-
-.formulario {
+.header-container {
     display: flex;
     flex-direction: column;
-    gap: 2px;
-    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
 }
 
-button:hover {
-    background-color: #6b03c0;
+.links {
+    text-decoration: none;
+    background-color: #ff94a6;
+    box-shadow: inset 0px -4px 5px 0px #fc7991;
+    border-radius: 10px;
     color: #fff;
+    padding: 5px 10px;
+}
+
+.links:hover {
+    background-color: #fc7991;
     transition: 0.5s;
 }
 
-@media (min-width: 576px) {
-    .formulario {
+.image {
+    width: 200px;
+    height: 200px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.img-project {
+    width: 260px;
+}
+
+.img-project img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.img2-project {
+    height: 270px;
+}
+
+.img2-project img {
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.img-skills {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.img-skills img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: inherit;
+}
+
+@media (min-width: 556px) {
+    .project-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 640px) {
+    .header-container {
+        flex-direction: row;
+    }
+
+    .text-container {
         width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .contenedor {
+        margin: 40px;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        width: 100%;
+    }
+
+    .header-container {
+        gap: 40px;
+    }
+
+    .text-container {
+        width: 40%;
+    }
+
+    .navbar-nav a::before,
+    .navbar-nav a::after {
+        content: "";
+        border-bottom: 1px solid #fc7991;
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .navbar-nav a::before {
+        bottom: -5px;
+        left: 0;
+        width: 90%;
+    }
+
+    .navbar-nav a::after {
+        bottom: -10px;
+        right: 0;
+        width: 60%;
+    }
+
+    .navbar-nav a:hover::before {
+        bottom: -5px;
+        left: 0;
+        width: 70%;
+        opacity: 1;
+    }
+
+    .navbar-nav a:hover::after {
+        bottom: -10px;
+        right: 0;
+        width: 40%;
+        opacity: 1;
     }
 }
