@@ -17,150 +17,147 @@
   </head>
 
   <body>
-    <div class="contenedor">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav py-2">
+            <a href="#sobremi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#herramientas">Herramientas</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header id="sobremi" class="header-container">
+      <div class="text-container px-2 mb-2">
+        <h1 class="titulo">Micaela Merino</h1>
+        <h2>Frontend Developer</h2>
+        <p>
+          Me especializo en el desarrollo web, actualmente enfocada en el
+          usuario. Mi trayectoria en el sector tecnológico inició hace un año
+          mediante cursos y formación autodidacta. Me encuentro siempre
+          dispuesta a enfrentar retos y al aprendizaje continuo. Atenta a los
+          detalles, poseo particular interés por la accesibilidad web, la web
+          responsive y la optimización en el rendimiento de las aplicaciones.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a class="links" href="/assets/curriculum.pdf" target="_blank"
+            >Descargar CV</a
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav py-2">
-              <a href="#sobremi">Sobre mí</a>
-              <a href="#proyectos">Proyectos</a>
-              <a href="#herramientas">Herramientas</a>
-            </div>
-          </div>
+          <a
+            class="links"
+            href="https://www.linkedin.com/in/micaela-merino-172271256/"
+            target="_blank"
+            ><img src="./assets/linkedin.svg" alt="Icono de Linkedin"
+          /></a>
+          <a
+            class="links"
+            href="https://github.com/micaelamerino"
+            target="_blank"
+            ><img src="./assets/github.svg" alt="Icono de GitHub"
+          /></a>
         </div>
-      </nav>
+      </div>
+      <div class="image mb-4">
+        <img
+          src="./assets/fotomia.jpg"
+          alt="Imagen personal"
+          class="rounded-circle object-fit-cover w-100 h-100"
+        />
+      </div>
+    </header>
 
-      <header id="sobremi" class="header-container">
-        <div class="text-container px-2 mb-2">
-          <h1 class="titulo">Micaela Merino</h1>
-          <h2>Frontend Developer</h2>
-          <p>
-            Me especializo en el desarrollo web, actualmente enfocada en el
-            usuario. Mi trayectoria en el sector tecnológico inició hace un año
-            mediante cursos y formación autodidacta. Me encuentro siempre
-            dispuesta a enfrentar retos y al aprendizaje continuo. Atenta a los
-            detalles, poseo particular interés por la accesibilidad web, la web
-            responsive y la optimización en el rendimiento de las aplicaciones.
-          </p>
-          <div class="d-flex flex-wrap justify-content-center gap-3">
-            <a class="links" href="/assets/curriculum.pdf" target="_blank"
-              >Descargar CV</a
-            >
-            <a
-              class="links"
-              href="https://www.linkedin.com/in/micaela-merino-172271256/"
-              target="_blank"
-              ><img src="./assets/linkedin.svg" alt="Icono de Linkedin"
-            /></a>
-            <a
-              class="links"
-              href="https://github.com/micaelamerino"
-              target="_blank"
-              ><img src="./assets/github.svg" alt="Icono de GitHub"
-            /></a>
+    <main id="proyectos" class="text-center">
+      <h3 class="titulo">Proyectos</h3>
+      <div class="d-flex flex-column gap-3">
+        <div>
+          <h3>Librería</h3>
+          <div class="d-flex flex-wrap justify-content-center gap-2 mb-3">
+            <div class="img-project">
+              <img
+                src="./assets/rincon.webp"
+                alt="Imagen de proyecto"
+              />
+            </div>
           </div>
+          <a
+            class="links"
+            href="https://el-rincon.vercel.app/"
+            target="_blank"
+            >Ir al sitio</a
+          >
         </div>
-        <div class="image mb-4">
-          <img
-            src="./assets/fotomia.jpg"
-            alt="Imagen personal"
-            class="rounded-circle object-fit-cover w-100 h-100"
-          />
+        <div>
+          <h3>E-commerce</h3>
+          <div class="d-flex flex-wrap justify-content-center gap-2 mb-3">
+            <div class="img-project">
+              <img
+                src="./assets/clothes1.webp"
+                alt="Imagen de proyecto"
+              />
+            </div>
+          </div>
+          <a
+            class="links"
+            href="https://new-fashion-clothes.vercel.app/"
+            target="_blank"
+            >Ir al sitio</a
+          >
         </div>
-      </header>
+        <div>
+          <h3>Universo Harry Potter</h3>
+          <div class="d-flex flex-wrap justify-content-center gap-2 mb-3">
+            <div class="img-project">
+              <img
+                src="./assets/harry1.webp"
+                alt="Imagen de proyecto"
+              />
+            </div>
+          </div>
+          <a
+            class="links"
+            href="https://harry-potter-world.vercel.app/"
+            target="_blank"
+            >Ir al sitio</a
+          >
+        </div>
+        <div>
+          <h3>Buscador de películas</h3>
+          <div class="d-flex flex-wrap justify-content-center gap-2 mb-3">
+            <div class="img-project">
+              <img
+                src="./assets/movies1.webp"
+                alt="Imagen de proyecto"
+              />
+            </div>
+          </div>
+          <a
+            class="links"
+            href="https://movies-for-you.vercel.app/"
+            target="_blank"
+            >Ir al sitio</a
+          >
+        </div>
+      </div>
+    </main>
 
-      <main id="proyectos" class="d-flex flex-column gap-3 text-center">
-        <h3 class="titulo">Proyectos</h3>
-        <p>"Si puedes imaginarlo, puedes programarlo"</p>
-        <div class="project-container">
-          <div>
-            <h3>Ecommerce</h3>
-            <div class="d-flex flex-wrap justify-content-center gap-2 mb-3">
-              <div class="img-project">
-                <img
-                  src="./assets/clothes1.webp"
-                  alt="Imagen de proyecto en desktop"
-                />
-              </div>
-              <div class="img2-project">
-                <img
-                  src="./assets/clothes2.webp"
-                  alt="Imagen de proyecto en movile"
-                />
-              </div>
-            </div>
-            <a
-              class="links"
-              href="https://new-fashion-clothes.vercel.app/"
-              target="_blank"
-              >Ir al sitio</a
-            >
-          </div>
-          <div>
-            <h3>Universo Harry Potter</h3>
-            <div class="d-flex flex-wrap justify-content-center gap-2 mb-3">
-              <div class="img-project">
-                <img
-                  src="./assets/harry1.webp"
-                  alt="Imagen de proyecto en desktop"
-                />
-              </div>
-              <div class="img2-project">
-                <img
-                  src="./assets/harry2.webp"
-                  alt="Imagen de proyecto en movile"
-                />
-              </div>
-            </div>
-            <a
-              class="links"
-              href="https://harry-potter-world.vercel.app/"
-              target="_blank"
-              >Ir al sitio</a
-            >
-          </div>
-          <div>
-            <h3>Buscador de películas</h3>
-            <div class="d-flex flex-wrap justify-content-center gap-2 mb-3">
-              <div class="img-project">
-                <img
-                  src="./assets/movies1.webp"
-                  alt="Imagen de proyecto desktop"
-                />
-              </div>
-              <div class="img2-project">
-                <img
-                  src="./assets/movies2.webp"
-                  alt="Imagen de proyecto en movile"
-                />
-              </div>
-            </div>
-            <a
-              class="links"
-              href="https://movies-for-you.vercel.app/"
-              target="_blank"
-              >Ir al sitio</a
-            >
-          </div>
-        </div>
-      </main>
-
-      <section
-        id="herramientas"
-        class="d-flex flex-column align-items-center py-4 mt-2"
-      >
-        <h3 class="titulo">Herramientas</h3>
+    <section
+      id="herramientas"
+      class="d-flex flex-column align-items-center py-4 mt-2"
+    >
+      <h3 class="titulo">Herramientas</h3>
         <div class="d-flex flex-wrap justify-content-center gap-5 mt-4">
           <div class="img-skills">
             <img src="./assets/html.png" alt="Logo de HTML" />
@@ -187,12 +184,11 @@
             <img src="./assets/tailwind.png" alt="Logo de Tailwind" />
           </div>
         </div>
-      </section>
+    </section>
 
-      <footer class="mt-5 pb-2 text-center">
-        <p>Hecho con ❤ by Micaela Merino</p>
-      </footer>
-    </div>
+    <footer class="mt-5 pb-2 text-center">
+      <p>Micaela Merino 2023</p>
+    </footer>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
