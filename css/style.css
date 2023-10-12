@@ -5,32 +5,38 @@
 
 :root {
     --gray: #afafaf;
-    --rosaClaro: #ff94a6;
-    --rosaOscuro: #fc7991;
+    --rosaClaro: #fd8da0;
+    --rosaOscuro: #ff6883;
+    --turquesa: #65c5bd;
+    --azulClaro: #2f2f5c;
+    --azulOscuro: #12121d;
 }
 
 body {
-    background-color: rgb(18, 18, 29);
+    background-color: var(--azulOscuro);
     color: var(--gray);
     font-family: Quicksand;
 }
 
 p {
     font-size: large;
-    padding: 20px 0;
+    padding: 20px;
 }
-header{
-    padding: 50px 0;
+
+header {
+    padding: 50px 10px;
 }
+
 .titulo {
-    color: #65c5bd;
+    color: var(--turquesa);
     font-size: 3rem;
     font-weight: 900;
 }
 
 .navbar {
-    background-color: rgb(47, 47, 92);
+    background-color: var(--azulClaro);
     padding: 20px 0;
+    box-shadow: inset 0px -4px 8px 0px var(--turquesa);
 }
 
 .navbar-nav a {
@@ -39,6 +45,10 @@ header{
     position: relative;
     font-weight: 600;
     font-size: large;
+}
+
+.navbar-toggler {
+    background-color: #afafaf;
 }
 
 .header-container {
@@ -54,10 +64,11 @@ header{
 .links {
     text-decoration: none;
     background-color: var(--rosaClaro);
-    box-shadow: inset 0px -4px 5px 0px var(--rosaOscuro);
+    box-shadow: inset 0px -6px 4px 0px var(--rosaOscuro);
     border-radius: 10px;
-    color: #fff;
-    padding: 5px 10px;
+    color: var(--azulOscuro);
+    font-weight: 900;
+    padding: 8px 10px;
 }
 
 .links:hover {
@@ -65,7 +76,7 @@ header{
     transition: 0.5s;
 }
 
-.image {
+.photo {
     width: 200px;
     height: 200px;
 }
@@ -73,12 +84,14 @@ header{
 .img-project {
     width: 300px;
     height: 250px;
+    border-radius: 10px;
 }
 
-.img-project img {
+.img-project>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: inherit;
 }
 
 .img-skills {
@@ -87,11 +100,38 @@ header{
     border-radius: 50%;
 }
 
-.img-skills img {
+.img-skills>img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     border-radius: inherit;
+}
+
+.container-certificate {
+    width: 300px;
+}
+
+.container-certificate>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.btn-return {
+    position: sticky;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--turquesa);
+    top: 90%;
+    left: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-return>a {
+    text-decoration: none;
 }
 
 @media (min-width: 556px) {
@@ -104,6 +144,9 @@ header{
     .img-project {
         width: 500px;
         height: 350px;
+    }
+    .container-certificate {
+        width: 450px;
     }
 }
 
@@ -140,7 +183,7 @@ header{
     .navbar-nav a::before,
     .navbar-nav a::after {
         content: "";
-        border-bottom: 1px solid #fc7991;
+        border-bottom: 1px solid var(--turquesa);
         position: absolute;
         opacity: 0;
         transition: 0.5s;
@@ -170,5 +213,9 @@ header{
         right: 0;
         width: 40%;
         opacity: 1;
+    }
+
+    .btn-return {
+        left: 90%;
     }
 }
