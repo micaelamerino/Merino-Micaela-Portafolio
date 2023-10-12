@@ -1,33 +1,44 @@
 @font-face {
-    font-family: Rochester;
-    src: url("/fonts/Rochester-Regular.ttf");
+    font-family: 'Quicksand';
+    src: url("/fonts/Quicksand-Regular.ttf");
 }
 
-@font-face {
-    font-family: Ysabeau Infant;
-    src: url("/fonts/YsabeauInfant-Regular.ttf");
+:root {
+    --gray: #afafaf;
+    --rosaClaro: #ff94a6;
+    --rosaOscuro: #fc7991;
 }
 
 body {
-    background-image: url("/assets/fondo1.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left;
-    font-family: Ysabeau Infant, sans-serif;
-    font-size: larger;
+    background-color: rgb(18, 18, 29);
+    color: var(--gray);
+    font-family: Quicksand;
 }
 
+p {
+    font-size: large;
+    padding: 20px 0;
+}
+header{
+    padding: 50px 0;
+}
 .titulo {
-    font-family: Rochester;
     color: #65c5bd;
-    font-size: 4rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.navbar {
+    background-color: rgb(47, 47, 92);
+    padding: 20px 0;
 }
 
 .navbar-nav a {
     text-decoration: none;
-    color: #000;
+    color: var(--gray);
     position: relative;
+    font-weight: 600;
+    font-size: large;
 }
 
 .header-container {
@@ -42,15 +53,15 @@ body {
 
 .links {
     text-decoration: none;
-    background-color: #ff94a6;
-    box-shadow: inset 0px -4px 5px 0px #fc7991;
+    background-color: var(--rosaClaro);
+    box-shadow: inset 0px -4px 5px 0px var(--rosaOscuro);
     border-radius: 10px;
     color: #fff;
     padding: 5px 10px;
 }
 
 .links:hover {
-    background-color: #fc7991;
+    background-color: var(--rosaOscuro);
     transition: 0.5s;
 }
 
@@ -89,6 +100,7 @@ body {
         justify-content: space-evenly;
         padding: 10px;
     }
+
     .img-project {
         width: 500px;
         height: 350px;
